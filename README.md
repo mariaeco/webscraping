@@ -13,30 +13,38 @@ Cada pasta contém um projeto independente de webscraping.
 
 Os scripts foram escritos majoritariamente em Python, utilizando bibliotecas como:
 
+    selenium
     requests
-
-    Selenium
-
     pandas
+    chromadb
+    playwright
 
 entre outras, dependendo da necessidade.
 
 Sempre que possível, os dados coletados são utilizados para análises exploratórias, relatórios ou visualizações.
 
 
-    webscrapings-projetos/
+    webscraping/
     │
-    ├── projeto-dispensasLicitPB/
+    ├── dispensasLicitPB/
     │   ├── scraping.py
     |   ├── data_join.csv
     |   ├── data_standardization.ipynb
     │   ├── requirements.txt
     |   ├── README.md
     │
-    ├── README.md
+    ├── resolutionUFPB/
+    │   ├── scraper.py
+    |   ├── download_functions.py
+    |   ├── create_collection_functions.py
+    |   ├── fix_file_type
+    |   ├── html_to_pdf
+    |   ├── ocr.py
+    │   ├── requirements.txt
+    |   ├── README.md
+    │
+    ── README.md
 
-
-## 📌 Observações Importantes
-Os projetos respeitam as políticas de acesso dos sites. Caso algum scraping não esteja disponível, é possível que o site tenha atualizado suas configurações.
-
-Este repositório é educacional. Sempre consulte os termos de uso dos sites antes de realizar coletas automáticas de dados.
+## 📌 Important Notes
+The projects respect the websites' access policies. If any scraping is not available, it is possible that the website has updated its settings.
+This repository is educational. Always consult the websites' terms of use before performing automatic data collections.
